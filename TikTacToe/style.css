@@ -15,11 +15,11 @@ div.box{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 50px;
     text-transform: uppercase;
     font-family: consolas;
     border-radius: 5px;
+    color: rgb(29, 54, 78);
     background-color: rgb(117, 216, 255);
     transition: all 0.2s ease;
 }
@@ -28,5 +28,5 @@ div.box:hover{
     transition: all 0.2s ease;
 }
 div.box:active{
-    margin: 50px;
+    border: 1px solid black;
 }
