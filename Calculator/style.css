@@ -1,4 +1,5 @@
 body{
+    font-family: sans-serif;
     background-color: rgb(102, 181, 255);
 }
 .calculator-container{
@@ -10,16 +11,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 380px;
-    height: 560px;
+    width: 370px;
+    height: 590px;
     background-color: rgb(29, 54, 78);
     border: 2px solid rgb(29, 54, 78);
     border-radius: 5px;
 }
 .calculator{
     display: grid;
-    width: 360px;
-    height: 540px;
+    width: 340px;
+    height: 570px;
     grid-template-columns: repeat(4, 1fr);
     background-color: rgb(29, 54, 78);
     border-radius: 5px;
@@ -28,30 +29,48 @@ body{
     display: flex;
     grid-column: 1/5;
     text-align: right;
-    font-size: 50px;
+    font-size: 60px;
     color: white;
     font-family: consolas;
     background-color: rgb(29, 54, 78);
-    border: 1px solid rgb(117, 216, 255);
     border-radius: 5px;
     margin-left: 8px;
     margin-right: 8px;
     margin-top: 20px;
     margin-bottom: 15px;
+    padding-right: 10px;
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 2px rgb(36, 240, 255);
+    border: none;
+}
+.display:focus{
+    outline: none;
+}
+.flash{
+    box-shadow: 0px 0px 50px rgb(36, 240, 255);
+    transition: all 0.2s ease;
+    outline: none;
+    border: none;
 }
 .equal{
     grid-column: 4/5;
     grid-row: 5/7;
+    background-color: rgb(118, 189, 255);
+}
+.equal:hover{
+    box-shadow: 0px 0px 50px rgb(95, 187, 248);
+    transition: all 0.2s ease;
 }
 .add{
     grid-column: 4/5;
     grid-row: 3/5;
 }
 .buttons{
-    margin: 8px;
+    margin: 10px;
     font-family: consolas;
     font-size: 20px;
     border: none;
+    outline: 0;
     border-radius: 5px;
     background-color: rgb(117, 216, 255);
     transition: all 0.2s ease;
@@ -75,10 +94,11 @@ body{
     box-shadow: 0px 0px 50px rgb(255, 176, 176);
     transition: all 0.2s ease;
 }
-.equal{
-    background-color: rgb(118, 189, 255);
-}
-.equal:hover{
-    box-shadow: 0px 0px 50px rgb(95, 187, 248);
-    transition: all 0.2s ease;
+#expression{
+    display: flex;
+    position: absolute;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 25px;
+    color: rgba(255, 255, 255, 0.5);
 }

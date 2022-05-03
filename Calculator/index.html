@@ -10,47 +10,30 @@
 </head>
 
 <body>
-    <form>
+    <form id="form">
         <div class="calculator-container">
             <div class="calculator-body">
                 <div class="calculator">
-                    <input type="tel" id="display" class="display" placeholder="0" readonly>
-                    
-                    <button id="ac" class="buttons ac">AC</button>
-                    
-                    <button id="/" class="buttons divide" value="/">/</button>
-                    
-                    <button id="*" class="buttons multiply" value="*">*</button>
-                    
-                    <button id="-" class="buttons subtract" value="-">-</button>
-                    
-                    <button id="+" class="buttons add" value="+">+</button>
-                    
-                    <button id="7" class="buttons 7" value="7">7</button>
-                    
-                    <button id="8" class="buttons 8" value="8">8</button>
-                    
-                    <button id="9" class="buttons 9" value="9">9</button>
-                    
-                    <button id="4" class="buttons 4" value="4">4</button>
-
-                    <button id="5" class="buttons 5" value="5">5</button>
-
-                    <button id="6" class="buttons 6" value="6">6</button>
-                    
-                    <button id="1" class="buttons 1" value="1">1</button>
-                    
-                    <button id="2" class="buttons 2" value="2">2</button>
-                    
-                    <button id="3" class="buttons 3" value="3">3</button>
-                    
-                    <button id="%" class="buttons modulo" value="%">%</button>
-                    
-                    <button id="0" class="buttons 0" value="0">0</button>
-                    
-                    <button id="." class="buttons decpoint" value=".">.</button>
-
-                    <button id="=" class="buttons equal" value="=">=</button>
+                    <label id="expression" for="input"></label>
+                    <input type="text" id="input" class="display" placeholder="0" autocomplete="off">
+                    <button type="button" class="buttons ac" id="clr" value="">A/C</button>
+                    <button type="button" class="buttons " id="divide" value="/">/</button>
+                    <button type="button" class="buttons" id="multiply" value="*">*</button>
+                    <button type="button" class="buttons" id="minus" value="-">-</button>
+                    <button type="button" class="buttons" id="block7" value="7">7</button>
+                    <button type="button" class="buttons" id="block8" value="8">8</button>
+                    <button type="button" class="buttons" id="block9" value="9">9</button>
+                    <button type="button" class="buttons" id="block4" value="4">4</button>
+                    <button type="button" class="buttons" id="block5" value="5">5</button>
+                    <button type="button" class="buttons" id="block6" value="6">6</button>
+                    <button type="button" class="buttons" id="block1" value="1">1</button>
+                    <button type="button" class="buttons" id="block2" value="2">2</button>
+                    <button type="button" class="buttons" id="block3" value="3">3</button>
+                    <button type="button" class="buttons" id="block00" value="00">00</button>
+                    <button type="button" class="buttons" id="block0" value="0">0</button>
+                    <button type="button" class="buttons" id="dot" value=".">.</button>
+                    <button type="button" class="buttons add" id="plus" value="+">+</button>
+                    <button type="submit" class="buttons equal" id="ans">=</button>
                 </div>
             </div>
         </div>
