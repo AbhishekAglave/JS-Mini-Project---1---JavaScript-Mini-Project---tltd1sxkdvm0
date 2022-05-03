@@ -1,6 +1,6 @@
 div.container{
     display: grid;
-    height: 100vh;
+    height: 90vh;
     justify-content: center;
     align-content: center;
     grid-template-columns: 100px 100px 100px;
