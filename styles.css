@@ -12,7 +12,7 @@ div.container{
     background-color: rgb(29, 54, 78);
     user-select: none;
     border-radius: 5px;
-    width: 400px;
+    width: 100vw;
 }
 div.items{
     height: 50px;
@@ -39,4 +39,10 @@ div.items a{
     height: 50px;
     justify-content: center;
     align-items: center;
+}
+@media screen and (max-width: 400px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
 }
