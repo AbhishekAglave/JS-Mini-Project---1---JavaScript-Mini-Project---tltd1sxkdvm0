@@ -28,8 +28,14 @@ function mark() {
     checkWinner();
 
     // increament count for next player's mark
-    if (clicksCount == 2) {
-        clicksCount = 0;
+    if (clicksCount == 9) {
+        winnerDiv.setAttribute('class', 'winner');
+        winnerDiv.innerText='Draw!'
+        let playagainbtn = document.createElement('button');
+        playagainbtn.innerText = 'Play Again';
+        playagainbtn.setAttribute('id', 'playagainbtn');
+        playagainbtn.addEventListener('click', resetGame);
+        winnerDiv.appendChild(playagainbtn);
     }
 }
 
