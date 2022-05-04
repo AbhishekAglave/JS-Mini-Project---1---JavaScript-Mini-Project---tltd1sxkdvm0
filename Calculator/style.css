@@ -95,7 +95,7 @@ body{
 }
 
 .ac:active{
-    box-shadow: 0px 0px 50px rgb(255, 176, 176);
+    box-shadow: 0px 0px 50px rgb(255, 0, 0);
     transition: all 0.2s ease;
 }
 .buttons:active{
@@ -108,7 +108,7 @@ body{
 }
 @media only screen and (min-width: 600px) {
     .ac:hover{
-        box-shadow: 0px 0px 50px rgb(255, 176, 176);
+        box-shadow: 0px 0px 50px rgb(255, 5, 5);
         transition: all 0.2s ease;
     }
     .buttons:hover{
