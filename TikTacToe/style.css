@@ -5,9 +5,12 @@ body{
     align-items: center;
     background-color: rgb(29, 54, 78);
 }
-h2{
+h1{
+    position: absolute;
+    top: 4%;
     font-family: cursive;
     text-align: center;
+    color: white;
 }
 .main-container{
     display: flex;
@@ -18,7 +21,7 @@ h2{
 }
 .container{
     display: grid;
-    height: 60vh;
+    height: 80vh;
     justify-content: center;
     align-content: center;
     grid-template-columns: 100px 100px 100px;
