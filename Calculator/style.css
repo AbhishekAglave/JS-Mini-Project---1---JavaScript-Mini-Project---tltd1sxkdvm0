@@ -57,10 +57,7 @@ body{
     grid-row: 5/7;
     background-color: rgb(118, 189, 255);
 }
-.equal:hover{
-    box-shadow: 0px 0px 50px rgb(95, 187, 248);
-    transition: all 0.2s ease;
-}
+
 .add{
     grid-column: 4/5;
     grid-row: 3/5;
@@ -76,10 +73,7 @@ body{
     transition: all 0.2s ease;
     user-select: none;
 }
-.buttons:hover{
-    box-shadow: 0px 0px 50px rgb(36, 240, 255);
-    transition: all 0.2s ease;
-}
+
 .buttons:active{
     display: flex;
     justify-content: center;
@@ -90,10 +84,7 @@ body{
 .ac{
     background-color: rgb(252, 84, 84);
 }
-.ac:hover{
-    box-shadow: 0px 0px 50px rgb(255, 176, 176);
-    transition: all 0.2s ease;
-}
+
 #expression{
     display: flex;
     position: absolute;
@@ -101,4 +92,18 @@ body{
     margin-left: 15px;
     margin-top: 25px;
     color: rgba(255, 255, 255, 0.5);
+}
+@media only screen and (min-width: 600px) {
+    .ac:hover{
+        box-shadow: 0px 0px 50px rgb(255, 176, 176);
+        transition: all 0.2s ease;
+    }
+    .buttons:hover{
+        box-shadow: 0px 0px 50px rgb(36, 240, 255);
+        transition: all 0.2s ease;
+    }
+    .equal:hover{
+        box-shadow: 0px 0px 50px rgb(95, 187, 248);
+        transition: all 0.2s ease;
+    }
 }
