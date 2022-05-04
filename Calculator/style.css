@@ -93,6 +93,19 @@ body{
     margin-top: 25px;
     color: rgba(255, 255, 255, 0.5);
 }
+
+.ac:active{
+    box-shadow: 0px 0px 50px rgb(255, 176, 176);
+    transition: all 0.2s ease;
+}
+.buttons:active{
+    box-shadow: 0px 0px 50px rgb(36, 240, 255);
+    transition: all 0.2s ease;
+}
+.equal:active{
+    box-shadow: 0px 0px 50px rgb(95, 187, 248);
+    transition: all 0.2s ease;
+}
 @media only screen and (min-width: 600px) {
     .ac:hover{
         box-shadow: 0px 0px 50px rgb(255, 176, 176);
