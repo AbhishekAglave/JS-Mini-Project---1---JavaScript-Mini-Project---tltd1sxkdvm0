@@ -29,13 +29,7 @@ function mark() {
 
     // increament count for next player's mark
     if (clicksCount == 9) {
-        winnerDiv.setAttribute('class', 'winner');
-        winnerDiv.innerText='Draw!'
-        let playagainbtn = document.createElement('button');
-        playagainbtn.innerText = 'Play Again';
-        playagainbtn.setAttribute('id', 'playagainbtn');
-        playagainbtn.addEventListener('click', resetGame);
-        winnerDiv.appendChild(playagainbtn);
+        showDraw();
     }
 }
 
@@ -123,12 +117,7 @@ function checkWinner() {
         }
         // showing winner;
         if(winnerFound){
-            winnerDiv.setAttribute('class', 'winner');
-            let playagainbtn = document.createElement('button');
-            playagainbtn.innerText = 'Play Again';
-            playagainbtn.setAttribute('id', 'playagainbtn');
-            playagainbtn.addEventListener('click', resetGame);
-            winnerDiv.appendChild(playagainbtn);
+            showWinner();
         }
     }
     else{
@@ -139,6 +128,25 @@ function checkWinner() {
 
 function resetGame(){
     location.reload();
+}
+
+function showWinner(){
+    winnerDiv.setAttribute('class', 'winner');
+    let playagainbtn = document.createElement('button');
+    playagainbtn.innerText = 'Play Again';
+    playagainbtn.setAttribute('id', 'playagainbtn');
+    playagainbtn.addEventListener('click', resetGame);
+    winnerDiv.appendChild(playagainbtn);
+}
+
+function showDraw(){
+    winnerDiv.setAttribute('class', 'winner');
+    winnerDiv.innerText='Draw!'
+    let playagainbtn = document.createElement('button');
+    playagainbtn.innerText = 'Play Again';
+    playagainbtn.setAttribute('id', 'playagainbtn');
+    playagainbtn.addEventListener('click', resetGame);
+    winnerDiv.appendChild(playagainbtn);
 }
 
 box1.addEventListener('click', mark);
