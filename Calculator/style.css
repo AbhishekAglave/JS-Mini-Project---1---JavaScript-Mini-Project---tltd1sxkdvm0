@@ -2,6 +2,9 @@ body{
     font-family: sans-serif;
     background-color: rgb(218, 233, 248);
 }
+*{
+    color: rgb(17, 35, 73);
+}
 .calculator-container{
     display: flex;
     justify-content: center;
