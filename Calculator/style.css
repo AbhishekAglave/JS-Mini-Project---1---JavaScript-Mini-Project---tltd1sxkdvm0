@@ -1,6 +1,6 @@
 body{
     font-family: sans-serif;
-    background-color: rgb(102, 181, 255);
+    background-color: rgb(218, 233, 248);
 }
 .calculator-container{
     display: flex;
@@ -13,8 +13,8 @@ body{
     align-items: center;
     width: 370px;
     height: 590px;
-    background-color: rgb(29, 54, 78);
-    border: 2px solid rgb(29, 54, 78);
+    background-color: rgb(17, 35, 73);
+    border: 2px solid rgb(17, 35, 73);
     border-radius: 5px;
 }
 .calculator{
@@ -22,7 +22,7 @@ body{
     width: 340px;
     height: 570px;
     grid-template-columns: repeat(4, 1fr);
-    background-color: rgb(29, 54, 78);
+    background-color: rgb(17, 35, 73);
     border-radius: 5px;
 }
 .display{
@@ -32,7 +32,7 @@ body{
     font-size: 60px;
     color: white;
     font-family: consolas;
-    background-color: rgb(29, 54, 78);
+    background-color: transparent;
     border-radius: 5px;
     margin-left: 8px;
     margin-right: 8px;
@@ -52,12 +52,6 @@ body{
     outline: none;
     border: none;
 }
-.equal{
-    grid-column: 4/5;
-    grid-row: 5/7;
-    background-color: rgb(118, 189, 255);
-}
-
 .add{
     grid-column: 4/5;
     grid-row: 3/5;
@@ -73,7 +67,10 @@ body{
     transition: all 0.2s ease;
     user-select: none;
 }
-
+.buttons:hover{
+    box-shadow: 0px 0px 50px rgb(36, 240, 255);
+    transition: all 0.2s ease;
+}
 .buttons:active{
     display: flex;
     justify-content: center;
@@ -81,10 +78,22 @@ body{
     opacity: 10%;
     transition: all 0.1s ease-in;
 }
+.equal{
+    grid-column: 4/5;
+    grid-row: 5/7;
+    background-color: rgb(0, 132, 255);
+}
+.equal:hover{
+    box-shadow: 0px 0px 50px rgb(0, 153, 255);
+    transition: all 0.2s ease;
+}
 .ac{
     background-color: rgb(252, 84, 84);
 }
-
+.ac:hover{
+    box-shadow: 0px 0px 50px rgb(255, 0, 0);
+    transition: all 0.2s ease;
+}
 #expression{
     display: flex;
     position: absolute;
@@ -92,31 +101,4 @@ body{
     margin-left: 15px;
     margin-top: 25px;
     color: rgba(255, 255, 255, 0.5);
-}
-
-.buttons:active{
-    box-shadow: 0px 0px 50px rgb(0, 238, 255);
-    transition: all 0.2s ease;
-}
-.equal:active{
-    box-shadow: 0px 0px 50px rgb(0, 153, 255);
-    transition: all 0.2s ease;
-}
-.ac:active{
-    box-shadow: 0px 0px 50px rgb(255, 0, 0);
-    transition: all 0.2s ease;
-}
-@media only screen and (min-width: 600px) {
-    .buttons:hover{
-        box-shadow: 0px 0px 50px rgb(0, 238, 255);
-        transition: all 0.2s ease;
-    }
-    .equal:hover{
-        box-shadow: 0px 0px 50px rgb(0, 153, 255);
-        transition: all 0.2s ease;
-    }
-    .ac:hover{
-        box-shadow: 0px 0px 50px rgb(255, 5, 5);
-        transition: all 0.2s ease;
-    }
 }
