@@ -32,7 +32,7 @@ function mark() {
         highlightAll()
         setTimeout(() => {
             showDraw();
-        }, 1000);
+        }, 2000);
     }
 }
 
@@ -138,7 +138,7 @@ function checkWinner() {
         if(winnerFound){
             setTimeout(() => {
                 showWinner();
-            }, 1000);
+            }, 2000);
         }
     }
     else{
