@@ -47,7 +47,6 @@ body{
     gap: 20px;
     position: absolute;
     height: 350px;
-    width: 350px;
     transition: background 0.5s ease-out;
     transition: font 0.2s ease;
     background-color: rgb(29, 54, 78);
