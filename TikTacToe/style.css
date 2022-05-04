@@ -46,10 +46,10 @@ h1{
     outline: none;
     border: none;
 }
-.box:hover{
+/* .box:hover{
     box-shadow: 0px 0px 50px rgb(36, 240, 255);
     transition: all 0.2s ease;
-}
+} */
 .box:active{
     border: 1px solid black;
     box-shadow: 0px 0px 50px rgb(36, 240, 255);
