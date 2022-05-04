@@ -29,12 +29,14 @@ function mark() {
 
     // increament count for next player's mark
     if (clicksCount == 9) {
-        showDraw();
+        setTimeout(() => {
+            showDraw();
+        }, 1000);
     }
 }
 
 let winnerFound = false;
-
+let winner = '';
 
 function checkWinner() {
     // Checking for ✓ is winner or not;
@@ -42,82 +44,84 @@ function checkWinner() {
     if(!winnerFound){
         if (box1.innerText == '✓' && box2.innerText == '✓' && box3.innerText == '✓') {
             winnerFound = true;
-            winnerDiv.innerText='✓ is the winner!';
+            winner='✓ is the winner!';
         }
         if (box4.innerText == '✓' && box5.innerText == '✓' && box6.innerText == '✓') {
             winnerFound = true;
-            winnerDiv.innerText='✓ is the winner!';
+            winner='✓ is the winner!';
         }
         if (box7.innerText == '✓' && box8.innerText == '✓' && box9.innerText == '✓') {
             winnerFound = true;
-            winnerDiv.innerText='✓ is the winner!';
+            winner='✓ is the winner!';
         }
     
         // Checking Winner in vertical lines
         if (box1.innerText == '✓' && box4.innerText == '✓' && box7.innerText == '✓') {
             winnerFound = true;
-            winnerDiv.innerText='✓ is the winner!';
+            winner='✓ is the winner!';
         }
         if (box2.innerText == '✓' && box5.innerText == '✓' && box8.innerText == '✓') {
             winnerFound = true;
-            winnerDiv.innerText='✓ is the winner!';
+            winner='✓ is the winner!';
         }
         if (box3.innerText == '✓' && box6.innerText == '✓' && box9.innerText == '✓') {
             winnerFound = true;
-            winnerDiv.innerText='✓ is the winner!';
+            winner='✓ is the winner!';
         }
     
         // Checking Winner in cross lines
         if (box1.innerText == '✓' && box5.innerText == '✓' && box9.innerText == '✓') {
             winnerFound = true;
-            winnerDiv.innerText='✓ is the winner!';
+            winner='✓ is the winner!';
         }
         if (box3.innerText == '✓' && box5.innerText == '✓' && box7.innerText == '✓') {
             winnerFound = true;
-            winnerDiv.innerText='✓ is the winner!';
+            winner='✓ is the winner!';
         }
     
         // Checking ✗ is winner or not;
         // Checking Winner in horizontal lines
         if (box1.innerText == '✗' && box2.innerText == '✗' && box3.innerText == '✗') {
             winnerFound = true;
-            winnerDiv.innerText='✗ is the winner!';
+            winner='✗ is the winner!';
         }
         if (box4.innerText == '✗' && box5.innerText == '✗' && box6.innerText == '✗') {
             winnerFound = true;
-            winnerDiv.innerText='✗ is the winner!';
+            winner='✗ is the winner!';
         }
         if (box7.innerText == '✗' && box8.innerText == '✗' && box9.innerText == '✗') {
             winnerFound = true;
-            winnerDiv.innerText='✗ is the winner!';
+            winner='✗ is the winner!';
         }
     
         // Checking Winner in vertical lines
         if (box1.innerText == '✗' && box4.innerText == '✗' && box7.innerText == '✗') {
             winnerFound = true;
-            winnerDiv.innerText='✗ is the winner!';
+            winner='✗ is the winner!';
         }
         if (box2.innerText == '✗' && box5.innerText == '✗' && box8.innerText == '✗') {
             winnerFound = true;
-            winnerDiv.innerText='✗ is the winner!';
+            winner='✗ is the winner!';
         }
         if (box3.innerText == '✗' && box6.innerText == '✗' && box9.innerText == '✗') {
             winnerFound = true;
-            winnerDiv.innerText='✗ is the winner!';
+            winner='✗ is the winner!';
         }
     
         // Checking Winner in cross lines
         if (box1.innerText == '✗' && box5.innerText == '✗' && box9.innerText == '✗') {
             winnerFound = true;
-            winnerDiv.innerText='✗ is the winner!';
+            winner='✗ is the winner!';
         }
         if (box3.innerText == '✗' && box5.innerText == '✗' && box7.innerText == '✗') {
             winnerFound = true;
-            winnerDiv.innerText='✗ is the winner!';
+            winner='✗ is the winner!';
         }
         // showing winner;
         if(winnerFound){
-            showWinner();
+            setTimeout(() => {
+                showWinner();
+            }, 1000);
         }
     }
     else{
@@ -133,6 +137,7 @@ function resetGame(){
 function showWinner(){
     winnerDiv.setAttribute('class', 'winner');
     let playagainbtn = document.createElement('button');
+    winnerDiv.innerText = winner;
     playagainbtn.innerText = 'Play Again';
     playagainbtn.setAttribute('id', 'playagainbtn');
     playagainbtn.addEventListener('click', resetGame);
