@@ -3,6 +3,37 @@ let expression = document.querySelector('#expression');
 let answer = 0;
 
 function display(){
+    if(input.value==answer && this.value==0){
+        input.value="";
+    }
+    if(input.value==answer && this.value==1){
+        input.value="";
+    }
+    if(input.value==answer && this.value==2){
+        input.value="";
+    }
+    if(input.value==answer && this.value==3){
+        input.value="";
+    }
+    if(input.value==answer && this.value==4){
+        input.value="";
+    }
+    if(input.value==answer && this.value==5){
+        input.value="";
+    }
+    if(input.value==answer && this.value==6){
+        input.value="";
+    }
+    if(input.value==answer && this.value==7){
+        input.value="";
+    }
+    if(input.value==answer && this.value==8){
+        input.value="";
+    }
+    if(input.value==answer && this.value==9){
+        input.value="";
+    }
+
     if(input.value.length==0){
         input.value="";
     }
