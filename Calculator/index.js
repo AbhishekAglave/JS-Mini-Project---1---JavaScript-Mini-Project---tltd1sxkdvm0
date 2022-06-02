@@ -37,6 +37,7 @@ function display(){
     if(input.value.length==0){
         input.value="";
     }
+
     input.value+=this.value;
 }
 
@@ -49,7 +50,13 @@ function flashOut(){
 
 function calculate(event){
     event.preventDefault();
-    answer = eval(input.value);
+    try{
+        answer = eval(input.value);
+    }
+    catch{
+        alert('Expression is Invalid');
+    }
+    
     if(input.value!=''){
         expression.innerHTML = input.value+" =";
         input.value = answer;
