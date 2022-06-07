@@ -1,0 +1,107 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(218, 233, 248);
+}
+*{
+    color: rgb(17, 35, 73);
+}
+.calculator-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.calculator-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 590px;
+    background-color: rgb(17, 35, 73);
+    border: 2px solid rgb(17, 35, 73);
+    border-radius: 5px;
+}
+.calculator{
+    display: grid;
+    width: 340px;
+    height: 570px;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(17, 35, 73);
+    border-radius: 5px;
+}
+.display{
+    display: flex;
+    grid-column: 1/5;
+    text-align: right;
+    font-size: 60px;
+    color: white;
+    font-family: consolas;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding-right: 10px;
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 2px rgb(0, 183, 255);
+    border: none;
+}
+.display:focus{
+    outline: none;
+}
+.flash{
+    box-shadow: 0px 0px 50px rgb(0, 183, 255);
+    transition: all 0.2s ease;
+    outline: none;
+    border: none;
+}
+.add{
+    grid-column: 4/5;
+    grid-row: 3/5;
+}
+.buttons{
+    margin: 10px;
+    font-family: consolas;
+    font-size: 20px;
+    border: none;
+    outline: 0;
+    border-radius: 5px;
+    background-color: rgb(0, 183, 255);
+    transition: all 0.2s ease;
+    user-select: none;
+}
+.buttons:hover{
+    box-shadow: 0px 0px 50px rgb(0, 183, 255);
+    transition: all 0.2s ease;
+}
+.buttons:active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 10%;
+    transition: all 0.1s ease-in;
+}
+.equal{
+    grid-column: 4/5;
+    grid-row: 5/7;
+    background-color: rgb(0, 132, 255);
+}
+.equal:hover{
+    box-shadow: 0px 0px 50px rgb(0, 153, 255);
+    transition: all 0.2s ease;
+}
+.ac{
+    background-color: rgb(252, 84, 84);
+}
+.ac:hover{
+    box-shadow: 0px 0px 50px rgb(255, 0, 0);
+    transition: all 0.2s ease;
+}
+#expression{
+    display: flex;
+    position: absolute;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 25px;
+    color: rgba(255, 255, 255, 0.5);
+}
